@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Suboohi Sayeed</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Suboohi Sayeed</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/Untitled design.png" alt="Suboohi Sayeed profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Suboohi Sayeed</h1>
+        <p class="section__text__p2">Aspiring Frontend Developer</p>
+        <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/Technical Resume 2024 (5).pdf')"
+                >
+                Download CV
+            </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                  Contact Info
+                </button>
+            </div>
+        <div id="socials-container">
+            <img
+            src="./assets/317750_linkedin_icon.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://linkedin.com/in/suboohi-sayeed/'"
+            />
+            <img
+              src="./assets/211904_social_github_icon.png" 
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/sweetdaisy35'"
+            />
+          </div>
+        </div>
+      </section>
+      
+      <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/TMU-IMG.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p class="education-text">B.Sc. Bachelors Degree<br />Computer Science<br />Toronto Metropolitan University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="bio-text">
+                        Hi there! I'm Suboohi, a third-year computer science student with a passion for coding and a drive to continually learn and grow. Whether it's developing applications or engaging in creative problem-solving, I’m always excited to tackle new challenges and make a positive impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+    
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experiences-container">
+            <div class="experience-item">
+                <img src="./assets/java-icon.png" alt="Java Icon" class="experience-icon">
+                <p>Java</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/python-icon.png" alt="Python Icon" class="experience-icon">
+                <p>Python</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/html-icon.png" alt="HTML Icon" class="experience-icon">
+                <p>HTML</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/css-icon.png" alt="CSS Icon" class="experience-icon">
+                <p>CSS</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/c-icon.png" alt="C Icon" class="experience-icon">
+                <p>C</p>
+            </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Check Out My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="row">
+          <article class="col-6 col-12-xsmall work-item">
+              <a href="assets/images/fulls/project1.jpg" class="image fit thumb">
+                  <img src="assets/Zen.png" alt="Project 1 Thumbnail" />
+              </a>
+              <h3>Zen Harmony</h3>
+              <p>A therapeutic game that helps players take care of their mental well-being through taking care of a pet.</p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+              <a href="assets/images/fulls/project2.jpg" class="image fit thumb">
+                  <img src="assets/CF.png" alt="Project 2 Thumbnail" />
+              </a>
+              <h3>Club Finance Tracker</h3>
+              <p>A system that helps a club manage member registrations, class scheduling, and financial transactions.  </p>
+          </article>
+          <article class="col-6 col-12-xsmall work-item">
+              <a href="assets/images/fulls/project3.jpg" class="image fit thumb">
+                  <img src="assets/greenclues.png" alt="Project 3 Thumbnail" />
+              </a>
+              <h3>Green Clues</h3>
+              <p>An educational detective game where players investigate the source of pollution using scientific methods to gather evidence and analyze data.</p>
+          </article>
+      </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#contact'"
+        />
+      </section>
+
+      <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <p>Whether you have a question, want to discuss a project, or just want to say hello, feel free to reach out!</p>
+        <div class="row">
+            <div class="col-8 col-12-small">
+                <form id="contactForm" method="post" action="#">
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                        <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                        <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="8"></textarea></div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send Message" /></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          alert('Form submitted successfully!'); // You can replace this with any action you want to take on form submission
+      });
+    </script>      
+
+      <footer>
+        <p>Copyright &#169; 2024 Suboohi Sayeed. All Rights Reserved.</p>
+      </footer>
+<!--
+    <section id="experiences">
+        <h2 class="section-title">Programming Languages</h2>
+        <div class="experiences-container">
+            <div class="experience-item">
+                <img src="./assets/icons/java.png" alt="Java Icon" class="experience-icon">
+                <p>Java</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/icons/python.png" alt="Python Icon" class="experience-icon">
+                <p>Python</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/icons/html.png" alt="HTML Icon" class="experience-icon">
+                <p>HTML</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/icons/css.png" alt="CSS Icon" class="experience-icon">
+                <p>CSS</p>
+            </div>
+            <div class="experience-item">
+                <img src="./assets/icons/javascript.png" alt="JavaScript Icon" class="experience-icon">
+                <p>JavaScript</p>
+            </div>
+        </div>
+    </section>
+-->
+    <script src="script.js"></script>
+</body>
+</html>
